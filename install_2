@@ -1,5 +1,7 @@
 mkdir -p ~/.ssh/config
 
+curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
+
 flatpak install flathub com.transmissionbt.Transmission -y 
 
 flatpak install flathub io.github.TransmissionRemoteGtk -y 
