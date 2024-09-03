@@ -59,11 +59,6 @@ flatpak install flathub com.github.tchx84.Flatseal -y
 
 flatpak install flathub org.mozilla.firefox -y
 
-flatpak install flathub org.gnome.Evolution -y
-
-
-
-
 flatpak install flathub fr.romainvigier.MetadataCleaner -y
 
 
@@ -176,6 +171,11 @@ sudo apt install foliate -y
 sudo apt install most -y
 
 ###
+sudo apt install evolution -y
+echo 'deb http://download.opensuse.org/repositories/home:/fawz:/libetebase/xUbuntu_24.04/ /' | sudo tee /etc/apt/sources.list.d/home:fawz:libetebase.list
+curl -fsSL https://download.opensuse.org/repositories/home:fawz:libetebase/xUbuntu_24.04/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home_fawz_libetebase.gpg > /dev/null
+sudo apt update -y
+sudo apt install evolution-etesync -y
 
 sudo apt install jq -y
 
