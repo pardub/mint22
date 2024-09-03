@@ -22,11 +22,26 @@ cd || exit
 # Install automatically security updates
 sudo apt install unattended-upgrades -y
 
+# +--------------------+
+# | Python virtual Env |
+# +--------------------+
+
+sudo apt install python3-venv python3-pip -y
+python3 -m venv global_env
+source global_env/bin/activate
 
 
 mkdir -p ~/.ssh/config
 
+# +------+
+# | Rust |
+# +------+
+
 curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
+
+# +---------+
+# | flatpak |
+# +---------+
 
 flatpak install flathub com.transmissionbt.Transmission -y 
 
