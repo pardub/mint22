@@ -157,6 +157,8 @@ flatpak install flathub io.crow_translate.CrowTranslate -y
 
 curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 
+exec bash
+source global_env/bin/activate
 
 # A simple, fast and user-friendly alternative to 'find' 
 cargo install fd-find
