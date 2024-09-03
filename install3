@@ -43,6 +43,8 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 # | flatpak |
 # +---------+
 
+sudo apt install flatpak -y
+
 flatpak install flathub com.transmissionbt.Transmission -y 
 
 flatpak install flathub io.github.TransmissionRemoteGtk -y 
