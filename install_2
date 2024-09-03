@@ -203,7 +203,7 @@ cd || exit
 sudo apt install  fd-find -y
 
 # VOIP 
-sudo apt install linphone -y
+sudo apt install linphone-desktop -y
 
 # Collection of Linux utilities
 sudo apt install util-linux -y
