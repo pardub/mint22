@@ -56,10 +56,6 @@ flatpak install flathub com.github.tchx84.Flatseal -y
 
 flatpak install flathub org.mozilla.firefox -y
 
-flatpak install flathub org.gnome.Evolution -y
-
-
-
 
 flatpak install flathub fr.romainvigier.MetadataCleaner -y
 
