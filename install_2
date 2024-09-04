@@ -426,8 +426,29 @@ echo "ripgrep with PCRE2 support installed successfully."
 # |  Battery optimization  |
 # +------------------------+
 
+sudo apt install expect -y
+
+# Change to home directory
 cd
+
+# Clone the auto-cpufreq repository into /opt/auto-cpufreq
 sudo git clone https://github.com/AdnanHodzic/auto-cpufreq.git /opt/auto-cpufreq
+
+# Change to the auto-cpufreq directory
 cd /opt/auto-cpufreq
-sudo ./auto-cpufreq-installer
+
+# Automate the auto-cpufreq-installer interaction with expect
+expect << EOF
+  # Start the installer
+  spawn sudo ./auto-cpufreq-installer
+
+  # Wait for the prompt asking for "I" and send "I"
+  expect "I"
+  send "I\r"
+
+  # Allow the script to continue after sending input
+  interact
+EOF
+
+# Proceed with the installation command
 sudo auto-cpufreq --install
