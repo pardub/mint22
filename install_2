@@ -32,12 +32,6 @@ sudo apt install python3-venv python3-pip -y
 python3 -m venv global_env
 source global_env/bin/activate
 
-# +------+
-# | Rust |
-# +------+
-
-curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
-
 # +---------+
 # | flatpak |
 # +---------+
@@ -149,7 +143,9 @@ flatpak install flathub io.crow_translate.CrowTranslate -y
 # +---------+
 
 
-# Rust install
+# +------+
+# | Rust |
+# +------+
 
 curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 
