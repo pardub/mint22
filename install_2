@@ -281,7 +281,9 @@ sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | 
 # A command-line fuzzy finder
 ### SEE DEFUALT ANSWERS FOR SCRIPT INSTALL
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install
+# ~/.fzf/install
+yes | ~/.fzf/install
+
 
 # +--------+
 # | Vscode |
