@@ -264,7 +264,7 @@ sudo apt install pass -y
 sudo apt install qtpass -y
 
 # Tool necessary to use wireguard on Debian
-sudo apt install openresolv -y
+# sudo apt install openresolv -y
 
 # Install pip3
 sudo apt install python3-pip -y
